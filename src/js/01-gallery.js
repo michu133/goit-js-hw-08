@@ -9,7 +9,8 @@ import { galleryItems } from './gallery-items';
 console.log(galleryItems);
 
 function createGalleryItem(item) {
-  const galleryItem = document.createElement('div');
+  const galleryItem = document.createElement('li');
+  galleryItem.classList.add('gallery__link');
 
   const link = document.createElement('a');
   link.classList.add('gallery__item');
